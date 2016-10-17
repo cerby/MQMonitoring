@@ -1,0 +1,44 @@
+http://www.c-sharpcorner.com/UploadFile/167ad2/read-xml-file-using-xml-reader-in-C-Sharp/
+
+https://gist.github.com/cerby/989e9e40031a61989807
+
+http://stackoverflow.com/questions/27222915/how-to-display-records-with-time-interval
+
+http://www.c-sharpcorner.com/UploadFile/3d39b4/rendering-a-partial-view-and-json-data-using-ajax-in-Asp-Net/
+
+[22:07]	shard	okay, im looking this over. what is it you were trying to do?
+[22:08]	shard	also none of your stuff is thread-safe
+[22:09]	shard	it looks like you're trying to do something in a background process and want it to check if its done every time the user refreshes the page?
+[22:09]	Cerby	well, the thing i'm trying to do, is after the initial run in page_load, then i want it to only update one table at a time and it should only update the tables at the set intervals
+[22:09]	Cerby	the user should never do anything, its for a monitoring program
+[22:10]	Cerby	(except start the program)
+[22:10]	Cerby	it basically looks up the queues in websphere, but it needs to read and update the queues at different intervals
+[22:11]	Cerby	update the view of the queue*
+[22:12]	shard	okay so,
+[22:12]	shard	while you CAN do this
+[22:12]	shard	its not a good idea
+[22:12]	shard	http is really meant to be stateless. it gets stuff from the server, sends it off, and it's done
+[22:12]	shard	you should be managing this from the frontend
+[22:12]	shard	you can use an asp:updatepanel which lets you make calls without a postback
+[22:13]	Cerby	i see
+[22:13]	shard	then you put an asp:timer inside the update panel and have that run a method every interval
+[22:13]	shard	which gets your data
+[22:14]	Cerby	so i would need to send our update intervals into the view.asp
+[22:14]	Cerby	I guess that can be done, just gotta get the xml info into it then
+[22:15]	shard	is this webforms or mvc
+[22:15]	Cerby	mvc
+[22:16]	shard	okay, then never mind what i just said
+[22:17]	shard	instead you should be doing everything in js
+[22:17]	shard	with webapi
+[22:17]	shard	so you have a get api that returns the data. your js has a timer, on interval it makes an ajax call, gets the data, puts it into the page
+[22:18]	shard	here you go http://www.c-sharpcorner.com/UploadFile/3d39b4/rendering-a-partial-view-and-json-data-using-ajax-in-Asp-Net/
+[22:18]	shard	your api returns a partialview so it's already rendered html and you just insert it into a div
+[22:19]	Cerby	done down in sendtoview method
+[22:19]	Refia	oh shard hanabi got on boardgamearena
+[22:19]	shard	awesome
+[22:19]	Refia	that game ruled
+[22:20]	shard	so cerb, get rid of the threading stuff. make a method that returns a PartialView. call it with ajax
+[22:21]	Cerby	i'll look into this
+[22:21]	shard	the link i just posted above has everything you need
+[22:22]	shard	theres a really simple bluffing game i want to make a site for. miiiight do that today
+[22:22]	Cerby	i'll look into it in the morning, its past 10 here now

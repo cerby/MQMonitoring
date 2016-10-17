@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Students>
+
+  <Student>
+
+    <Name>Abhishek</Name>
+
+    <Location>Dhanbad</Location>
+
+  </Student>
+
+  <Student>
+
+    <Name>Aman</Name>
+
+    <Location>Samastipur</Location>
+
+  </Student>
+
+  <Student>
+
+    <Name>Vicky</Name>
+
+    <Location>Munger</Location>
+
+  </Student>
+
+  <Student>
+
+    <Name>Chandan</Name>
+
+    <Location>Bhagalpur</Location>
+
+  </Student>
+
+  <Student>
+
+    <Name>Ravi</Name>
+
+    <Location>Dhanbad</Location>
+
+  </Student>
+
+</Students>

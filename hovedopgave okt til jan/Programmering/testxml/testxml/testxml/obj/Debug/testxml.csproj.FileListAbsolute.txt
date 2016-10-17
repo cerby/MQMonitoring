@@ -1,0 +1,9 @@
+C:\Users\cerberus20\Documents\Visual Studio 2012\Projects\testxml\testxml\bin\Debug\testxml.exe.config
+C:\Users\cerberus20\Documents\Visual Studio 2012\Projects\testxml\testxml\bin\Debug\testxml.exe
+C:\Users\cerberus20\Documents\Visual Studio 2012\Projects\testxml\testxml\bin\Debug\testxml.pdb
+C:\Users\cerberus20\Documents\Visual Studio 2012\Projects\testxml\testxml\obj\Debug\testxml.csprojResolveAssemblyReference.cache
+C:\Users\cerberus20\Documents\Visual Studio 2012\Projects\testxml\testxml\obj\Debug\testxml.exe
+C:\Users\cerberus20\Documents\Visual Studio 2012\Projects\testxml\testxml\obj\Debug\testxml.pdb
+C:\Users\Kim\Dropbox\Dat5\Programmering\testxml\testxml\testxml\bin\Debug\testxml.exe.config
+C:\Users\Kim\Dropbox\Dat5\Programmering\testxml\testxml\testxml\obj\Debug\testxml.exe
+C:\Users\Kim\Dropbox\Dat5\Programmering\testxml\testxml\testxml\obj\Debug\testxml.pdb

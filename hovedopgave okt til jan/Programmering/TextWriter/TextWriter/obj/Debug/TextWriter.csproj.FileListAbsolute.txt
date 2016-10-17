@@ -1,0 +1,12 @@
+C:\Users\Kim\Dropbox\Documents\Visual Studio 2012\Projects\TextWriter\TextWriter\bin\Debug\TextWriter.exe.config
+C:\Users\Kim\Dropbox\Documents\Visual Studio 2012\Projects\TextWriter\TextWriter\bin\Debug\TextWriter.exe
+C:\Users\Kim\Dropbox\Documents\Visual Studio 2012\Projects\TextWriter\TextWriter\bin\Debug\TextWriter.pdb
+C:\Users\Kim\Dropbox\Documents\Visual Studio 2012\Projects\TextWriter\TextWriter\obj\Debug\TextWriter.csprojResolveAssemblyReference.cache
+C:\Users\Kim\Dropbox\Documents\Visual Studio 2012\Projects\TextWriter\TextWriter\obj\Debug\TextWriter.exe
+C:\Users\Kim\Dropbox\Documents\Visual Studio 2012\Projects\TextWriter\TextWriter\obj\Debug\TextWriter.pdb
+C:\Users\Christopher\Dropbox\Dat5\Programmering\TextWriter\TextWriter\bin\Debug\TextWriter.exe.config
+C:\Users\Christopher\Dropbox\Dat5\Programmering\TextWriter\TextWriter\obj\Debug\TextWriter.exe
+C:\Users\Christopher\Dropbox\Dat5\Programmering\TextWriter\TextWriter\obj\Debug\TextWriter.pdb
+C:\Users\Christopher\Dropbox\Dat5\Programmering\TextWriter\TextWriter\bin\Debug\TextWriter.exe
+C:\Users\Christopher\Dropbox\Dat5\Programmering\TextWriter\TextWriter\bin\Debug\TextWriter.pdb
+C:\Users\Christopher\Dropbox\Dat5\Programmering\TextWriter\TextWriter\obj\Debug\TextWriter.csprojResolveAssemblyReference.cache

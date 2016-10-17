@@ -1,0 +1,41 @@
+timer start
+mulig at bruge if(er tid over 5 minutter? så kør)
+{
+gør kode
+nulstil timer
+}
+http://codesamplez.com/programming/multithreaded-programming-c-sharp
+singleton?
+
+
+
+
+    public string[,] ReadQueue()
+    {
+        modelQueues = _modelXml.GetQueue();
+        string[,] readqueue = new string[modelQueues.Count,3];
+        
+        for (int i = 0; i < modelQueues.Count; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                string queuedetails = modelQueues[i].queueName + "-" + _model.ReadQueueDetails(modelQueues[i].queueName);
+                string[] queuedetailsseperate = queuedetails.Split('-');
+                //                  0=navn                    1=dybde               2=alder
+                readqueue[i, j] = queuedetailsseperate[j];
+            }
+            
+            
+            //køen har nu for alle navn, dybde og tid for alle køer
+        }
+        //string[] readqueue = _model.ReadQueueDetails(queuename).Split('-');
+        return readqueue;
+    }
+
+
+    public string ConnectQM(string queuemanager, int portnumber)
+    {
+        string connecttomanager = _model.ConnectMQ(queuemanager, "", portnumber, "");
+        string details = connecttomanager;
+        return details;
+    }

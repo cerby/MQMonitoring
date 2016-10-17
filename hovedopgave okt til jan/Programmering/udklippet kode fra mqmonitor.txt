@@ -1,0 +1,59 @@
+ModelMQReader mqr = _mqc.ReadQueueDetails(queueName);
+
+ public void Sendtoview(ModelMQReader t )
+    {
+        htmlstring += "<div class='box'><table ><tr>";
+        if (t.GetAgeChecker)
+        {
+            htmlstring += "<td style='background-color:green'>" + t.GetQueueName + "</td>";
+        }
+        else
+        {
+            htmlstring += "<td style='background-color:red'>" + t.GetQueueName + "</td>";
+        }
+        htmlstring += "<tr><td> Queue age: " + t.GetQueueAge + "</td></tr>";
+        htmlstring += "<tr><td>Queue depth: " + t.GetQueueDepth + " </td></tr>";
+        htmlstring += "</table></div>";
+    }
+    public void RunThread(ModelXMLQueue d, bool connected)
+    {
+        string queueName = d.GetQueueName;
+        double maxQueueAge = d.GetMaxQueueAge;
+        TimeSpan updateInterval = TimeSpan.FromSeconds(d.GetUpdateInterval);
+        ModelMQReader mqr = _mqc.ReadQueueDetails(queueName);
+
+                if (maxQueueAge >= mqr.GetQueueAge)
+                {
+                    mqr.SetAgeChecker = true;
+                    if (queuedic.ContainsKey(mqr.GetQueueName))
+                    {
+                        queuedic[mqr.GetQueueName] = mqr;
+                    }
+                    else
+                    {
+                        queuedic.Add(mqr.GetQueueName, mqr);
+                    }
+                }
+                else
+                {
+                    mqr.SetAgeChecker = false;
+                    if (queuedic.ContainsKey(mqr.GetQueueName))
+                    {
+                        queuedic[mqr.GetQueueName] = mqr;
+                    }
+                    else
+                    {
+                        queuedic.Add(mqr.GetQueueName, mqr);
+                    }
+
+                }
+                Sendtoview(mqr);
+                Thread.Sleep(updateInterval);
+    }
+
+        for (int i = 0; i < QList.Count; i++)
+        {
+            int k = i;
+            tasks[k] = Task.Factory.StartNew(() => RunThread(QList[k], connected));
+        }
+        Task.WaitAll(tasks);

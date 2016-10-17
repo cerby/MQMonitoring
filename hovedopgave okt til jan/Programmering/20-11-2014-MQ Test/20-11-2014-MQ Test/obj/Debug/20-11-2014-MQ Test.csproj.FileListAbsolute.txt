@@ -1,0 +1,14 @@
+c:\users\christopher\documents\visual studio 2013\Projects\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\20-11-2014-MQ Test.exe.config
+C:\Users\Christopher\documents\visual studio 2013\Projects\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\20-11-2014-MQ Test.exe
+C:\Users\Christopher\documents\visual studio 2013\Projects\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\20-11-2014-MQ Test.pdb
+C:\Users\Christopher\documents\visual studio 2013\Projects\20-11-2014-MQ Test\20-11-2014-MQ Test\obj\Debug\20-11-2014-MQ Test.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\documents\visual studio 2013\Projects\20-11-2014-MQ Test\20-11-2014-MQ Test\obj\Debug\20-11-2014-MQ Test.exe
+C:\Users\Christopher\documents\visual studio 2013\Projects\20-11-2014-MQ Test\20-11-2014-MQ Test\obj\Debug\20-11-2014-MQ Test.pdb
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\20-11-2014-MQ Test.exe.config
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\obj\Debug\20-11-2014-MQ Test.exe
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\obj\Debug\20-11-2014-MQ Test.pdb
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\obj\Debug\20-11-2014-MQ Test.csprojResolveAssemblyReference.cache
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\20-11-2014-MQ Test.exe
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\20-11-2014-MQ Test.pdb
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\amqmdnet.dll
+C:\Users\Kim\Dropbox\Dat5\Programmering\20-11-2014-MQ Test\20-11-2014-MQ Test\bin\Debug\amqmdxcs.dll

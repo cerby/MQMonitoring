@@ -1,0 +1,39 @@
+            /*
+            then put it in html
+            once items have been put in html, sleep individual instances
+             
+            */
+        for (int i = 0; i < QList.Count; i++)
+        {
+            MMQR = _mqc.ReadQueueDetails(QList[i].GetQueueName);
+
+            if (QDetails.ContainsKey(MMQR.GetQueueName)) // if queue exists in dictionary, simply update the value at key(queuename)
+            {
+                QDetails[MMQR.GetQueueName] = MMQR; 
+            }
+            else //else if queue doesn't already exist in dictionary, add it
+            {
+                QDetails.Add(MMQR.GetQueueName, MMQR);//queuename and queuedetails
+            }
+        } 
+
+
+        /*
+        foreach (KeyValuePair<string, ModelMQReader> t in queuedic)
+        {
+            htmlstring += "<div class='box'><table ><tr>";
+            if (t.Value.GetAgeChecker)
+            {
+                htmlstring += "<td style='background-color:green'>" + t.Value.GetQueueName + "</td>";
+            }
+            else
+            {
+                htmlstring += "<td style='background-color:red'>" + t.Value.GetQueueName + "</td>";
+            }
+            htmlstring += "<tr><td> Queue age: " + t.Value.GetQueueAge + "</td></tr>";
+            htmlstring += "<tr><td>Queue depth: " + t.Value.GetQueueDepth + " </td></tr>";
+            htmlstring += "</table></div>";
+
+
+        }
+         * */
